@@ -10,8 +10,11 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 ## Discription
-<br><br><br><br><center>
+<br><br><center>
 This app is designed to draw an n-edged shape, and color it usig the Red, Green and Blue components of a user specified color. It olso returns the hexadecimal color equivalent to the color selection.
+<br><br>
+
+You can find the app <br>[HERE](https://bleedereagle.shinyapps.io/Circle/)
 </center>
 
 ## Inputs and Outputs

@@ -1,0 +1,12 @@
+name: Circle
+title: Circle
+username:
+account: bleedereagle
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 554565
+bundleId: 1684074
+url: https://bleedereagle.shinyapps.io/Circle/
+when: 1541458682.86095
+asMultiple: FALSE
+asStatic: FALSE

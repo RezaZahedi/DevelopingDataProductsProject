@@ -1,15 +1,6 @@
-#
-# This is the server logic of a Shiny web application. You can run the 
-# application by clicking 'Run App' above.
-#
-# Find out more about building applications with Shiny here:
-# 
-#    http://shiny.rstudio.com/
-#
-
 library(shiny)
 
-# Define server logic required to draw a histogram
+# Define server logic required to draw an n-edged shape
 shinyServer(function(input, output) {
      
      # evaluating theta, the angles in which each vertex is

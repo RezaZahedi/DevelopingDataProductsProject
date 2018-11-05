@@ -11,3 +11,8 @@ components of a user specified color.
 - server.R: server codes.
 - ui.R: user interface codes.
 - .gitignore: files that wasnt meant to be published.
+
+### Links:
+##### one can find:
+- the app here: https://bleedereagle.shinyapps.io/Circle/
+- the presentation here: http://rpubs.com/bleedereagle/436882
