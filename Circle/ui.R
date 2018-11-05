@@ -45,7 +45,7 @@ shinyUI(fluidPage(
     mainPanel(
        h3("Discription:"),
        p("This app is designed to draw an n-edged shape, and color it usig the
-         the Red, Green and Blue components of a user specified color. It olso
+         Red, Green and Blue components of a user specified color. It olso
          returns the hexadecimal color equivalent to the color selection."),
        h3("Inputs:"),
        p("Number of edges; Red, green and blue intesity; X and Y axis limits, to change something :D"),

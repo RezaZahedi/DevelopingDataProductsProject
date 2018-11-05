@@ -1,0 +1,51 @@
+---
+title: "Developing Data Products Final Project"
+author: "Reza Zahedi"
+date: "November 6, 2018"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Discription
+<br><br><br><br><center>
+This app is designed to draw an n-edged shape, and color it usig the Red, Green and Blue components of a user specified color. It olso returns the hexadecimal color equivalent to the color selection.
+</center>
+
+## Inputs and Outputs
+
+#### Inputs:
+- Number of edges
+- Red, green and blue intesity, from 0 to 255
+- X and Y axis limits, to change something :D
+
+#### Outputs:
+- The hexadecimal color equvalent
+- The plot, as depicted in the next slide
+
+## Sample Plot Output
+
+```{r, fig.height= 4}
+cx = 10
+cy = 10
+rad <- 5
+n <- 6
+red = 85; green = 206; blue = 185;
+ylim = c(5, 15); xlim = c(0, 20);
+lineWidth <- 7
+
+theta <- seq(from = pi/n , to = 2 * pi + pi/n, length.out = n+1)
+
+x <- cx + rad * cos(theta)
+y <- cy + rad * sin(theta)
+
+plot(x, y, ylim = ylim, xlim = xlim, type = "l", bty = "n",
+     col = rgb(red, green, blue, max=255), lwd = lineWidth)
+points(10, 10, pch = 19)
+```
+
+- number of edges = `r n`
+- red = `r red`, green = `r green`, blue = `r blue`  
+- hexadecimal color is: `r rgb(red, green, blue, maxColorValue = 255)`
