@@ -21,15 +21,15 @@ shinyUI(fluidPage(
          selectInput("n", "Number of Edges:", 2:20, 5),
          
          sliderInput("red", "Red Intensity",
-              min = 1, max = 255, value = 193
+              min = 1, max = 255, value = 85
          ),
          
          sliderInput("green", "Green Intensity",
-              min = 1, max = 255, value = 70
+              min = 1, max = 255, value = 206
          ),
          
          sliderInput("blue", "Blue Intensity",
-              min = 1, max = 255, value = 13
+              min = 1, max = 255, value = 185
          ),
          
          sliderInput("xlim", "X Axis limits:",
@@ -43,14 +43,16 @@ shinyUI(fluidPage(
     
     # Show a plot of the generated distribution
     mainPanel(
-       plotOutput("circlePlot"),
        h3("Discription:"),
        p("This app is designed to draw an n-edged shape, and color it usig the
-         the Red, Green and Blue components of a user specified color."),
+         the Red, Green and Blue components of a user specified color. It olso
+         returns the hexadecimal color equivalent to the color selection."),
        h3("Inputs:"),
-       p("Number of edges"), br(),
-       p("Red, green and blue intesity"), br(),
-       p("X and Y axis limits, to change something :D")
+       p("Number of edges; Red, green and blue intesity; X and Y axis limits, to change something :D"),
+       h3("Outputs:"),
+       p("The hexadecimal color is:"),
+       strong(textOutput("hex")),
+       plotOutput("circlePlot")
     )
   )
 ))
